@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-       
-        <h1 class="titulo">Holding Mi Empresa</h1>
-        <a href="../index.html" >
-            <img class="logo" src="../images/logo2.png" alt="Logo">
-        </a>
+  <header class="d-flex align-items-center">
+    <h1 class="titulo me-3">Empresas Eltit Ltda.</h1>
+    <a href="../index.html">
+        <img class="logo" src="../images/logo_eltit_sin-fondo.png" alt="Logo">
+    </a>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Menú</a>
@@ -39,7 +38,7 @@
                         <a class="nav-link active" aria-current="page"  href="contacto.html">Contacto</a>
                       </li>
                     </ul>
-                    <form class="d-flex">
+                    <form class="d-flex" id="search">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                       <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
@@ -51,13 +50,25 @@
     <main class="clasemaingaleria">
         <h2 class="galeriaTitulo">Nuestras Imagenes</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dignissimos repudiandae fugit tenetur eos debitis vitae quas sequi consequatur fuga aut quam quos, tempora exercitationem suscipit et commodi at voluptas!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel labore reiciendis nesciunt necessitatibus vitae perspiciatis dicta fugiat. Odio accusamus consequuntur voluptas, placeat exercitationem qui earum labore quas quisquam omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo sed fuga quibusdam nihil itaque autem obcaecati dolor, iure veritatis fugit quidem quae illo eligendi nostrum beatae veniam, asperiores debitis?</p>
-        <div class="fotosPadre">
-            <img class="fotoGaleria" src="" alt="foto1">
-            <img class="fotoGaleria" src="" alt="foto2">
-            <img class="fotoGaleria" src="" alt="foto3">
-            <img class="fotoGaleria" src="" alt="foto4">
-            <img class="fotoGaleria" src="" alt="foto5">
-            <img class="fotoGaleria" src="" alt="foto6">
+
+        <div class="container__slider">
+          <input type="radio" name="slider" id="item-1" checked>
+          <input type="radio" name="slider" id="item-2">
+          <input type="radio" name="slider" id="item-3">
+
+          <div class="cards">
+            <label class="card" for="item-1" id="selector-1">
+              <img class="imgCard" src="../images/image1.jpeg" alt="fotoGaleria1">
+            </label>
+            <label class="card" for="item-2" id="selector-2">
+              <img class="imgCard" src="../images/logo_eltit.jpeg" alt="fotoGaleria2">
+            </label>
+            <label class="card" for="item-3" id="selector-3">
+              <img class="imgCard" src="../images/logo_eltit_sin-fondo.png" alt="fotoGaleria3">
+            </label>
+
+
+          </div>
         </div>
     </main>
     <footer class="piePadre">
@@ -71,6 +82,8 @@
                 <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
+            
+
             <div class="pieHijo hijoDos">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ratione sed commodi deleniti officiis? Laborum earum repudiandae quas iure, corrupti magnam tenetur quae aperiam possimus reiciendis accusamus qui sunt ea! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos beatae inventore quia, ea exercitationem cupiditate laboriosam consequuntur soluta corporis natus, voluptate in illo qui laudantium obcaecati distinctio ducimus, delectus amet.</p>
             </div>

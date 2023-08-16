@@ -1,334 +1,289 @@
-*{
-    margin: 0;
-    padding: 0;
+/*medias*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color:azure;
+  background-color: whitesmoke;
 }
+
 header {
-    margin: 20px;
-    /* padding: 20px; */
-    border-bottom: 2px solid blueviolet;
-    grid-area: header;
+  margin: 20px;
+  border-bottom: 2px solid blueviolet;
+  grid-area: header;
 }
 
-/* header nav {
-    text-align: right;
-    padding-right: 15px;
-    
-}
-
-
-nav ul{
-    list-style: none; 
-    
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-} 
-
-li a {
-    text-decoration: none;
-    text-transform:  uppercase;
-    font-weight: bold;
-}
-
-.logo{
-    width: 300px;
-    margin-bottom: 20px;
-}
-
-*/
-.titulo{
-    padding-top: 15px;
-    text-align: center;
-    grid-area: titulo;
-} 
-/*
-.buscador{
-    font-size: 20px;
-}
-
-input{
-    //
-    font-size: 20px; 
-    margin-bottom: 0px;
-    padding: 0px;
-}
-
-*/
- main 
 main {
-    margin: 20px;
-    padding: 20px;
-    border-bottom: 2px solid blueviolet;
-
+  margin: 20px;
+  padding: 20px;
+  border-bottom: 2px solid blueviolet;
+}
+main .titulo {
+  padding-top: 15px;
+  text-align: center;
+  grid-area: titulo;
+}
+main .container__slider {
+  max-width: 900px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+main input[type=radio] {
+  display: none;
+}
+main .container {
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  max-height: 400px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main .card {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+main .imgCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+main #item-2:checked ~ .cards #selector-1,
+main #item-1:checked ~ .cards #selector-3,
+main #item-3:checked ~ .cards #selector-2 {
+  transform: translateX(-40%) scale(0.8);
+  opacity: 0.6;
+  z-index: 0;
+}
+main #item-3:checked ~ .cards #selector-1,
+main #item-1:checked ~ .cards #selector-2,
+main #item-2:checked ~ .cards #selector-3 {
+  transform: translateX(40%) scale(0.8);
+  opacity: 0.6;
+  z-index: 0;
+}
+main #item-1:checked ~ .cards #selector-1,
+main #item-2:checked ~ .cards #selector-2,
+main #item-3:checked ~ .cards #selector-3 {
+  transform: translateX(0) scale(1);
+  z-index: 1;
 }
 
-.contenedorPadre{
-    display: flex;
-    margin: 20px;
-    padding: 10px;
-   
+.contenedorPadre {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
 }
 
-.contenedores{
-    
-    margin: 0 10px;
+.contenedores {
+  margin: 0 10px;
 }
 
-.contUno{
-    width: 30%;
-    grid-area: primero;
+.contUno {
+  width: 30%;
+  grid-area: primero;
 }
-.contDos{
-    width: 50%;
-    grid-area: segundo;
+
+.contDos {
+  width: 50%;
+  grid-area: segundo;
 }
 
 .subtitulo {
-    text-align: center;
-    font-size: 25px;
+  text-align: center;
+  font-size: 25px;
 }
 
 .imagenHome {
-    margin-top: 20px;
-    width: 100%;
-    height: 250px;
-    grid-area: fotomain;
+  margin-top: 20px;
+  width: 100%;
+  height: 250px;
+  grid-area: fotomain;
 }
 
-.parraCorto{
-    margin-top: 40px;
-    width: auto;
-    grid-area: corto;
+.parraCorto {
+  margin-top: 40px;
+  width: auto;
+  grid-area: corto;
 }
 
-.ultimoP{
-    grid-area: ultimo;
+.ultimoP {
+  grid-area: ultimo;
 }
 
-.contTres{
-    grid-area: grafico;
+.contTres {
+  grid-area: grafico;
 }
 
 .grafico {
-    width: 200px;
-    height: 190px;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 2px;
-
+  width: 200px;
+  height: 190px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 2px;
 }
 
 footer {
-    margin: 20px;
-    padding: 20px;
-    grid-area: footer;
+  margin: 20px;
+  padding: 20px;
+  grid-area: footer;
 }
-footer h3{
-    text-align: center;
-    grid-area: fin;
+footer h3 {
+  text-align: center;
+  grid-area: fin;
 }
-.contenedorFlex{
-    display: flex;
+footer .hijoUno {
+  width: 50%;
+  grid-area: hijoUno;
 }
-.piePadre{
-    
-    margin: 20px;
-    padding: 20;
-}
-
-.pieHijo{
-    
-    margin: 20px;
-    padding: 20;
+footer .hijoDos {
+  grid-area: hijoDos;
 }
 
-footer .hijoUno{
-    width: 50%;
-    grid-area: hijoUno;
+.contenedorFlex {
+  display: flex;
 }
 
-footer .hijoDos{
-    grid-area: hijoDos;
+.piePadre {
+  margin: 20px;
+  padding: 20;
 }
 
-.NosotrosContenerHijo{
-    display: flex;
-    margin: 20px;
-    padding: 20px;
-
-}
-.fotosNosotros{
-    display: flex;
-
+.pieHijo {
+  margin: 20px;
+  padding: 20;
 }
 
-.fotosHijas{
-    border: 1px solid burlywood;
-    margin: 0 5px;
-    width: 180px;
-    height: 200px;
+.NosotrosContenerHijo {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
 }
 
-.clasemaingaleria{
-    align-content: center;
+.fotosNosotros {
+  display: flex;
 }
 
-.fotosPadre{
-    display: flex;
-    align-items: center;
-}
-.fotoGaleria{
-    align-items: center;
-    border: 1px solid burlywood;
-    margin: 0 5px;
-    width: 180px;
-    height: 200px;
-}
-.galeriaTitulo{
-    text-align: center;
-    margin-bottom: 20px;
+.fotosHijas {
+  border: 1px solid burlywood;
+  margin: 0 5px;
+  width: 180px;
+  height: 200px;
 }
 
-h2{
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-}
-.comboLocales{
-    margin-top: 30px;
+h2 {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
 }
 
-.lorenSucursales{
-    margin-top: 60%;
-}
-.contenedorSucursales{
-    display: flex;
-    font-size: 40;
+.comboLocales {
+  margin-top: 30px;
 }
 
-.contenedorFormulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.formulario{
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 400px;
-    grid-area: formulario;
+.lorenSucursales {
+  margin-top: 60%;
 }
 
-#mensaje{
-    
-    overflow: scroll;
-    resize: none;
-
+.contenedorSucursales {
+  display: flex;
+  font-size: 40;
 }
 
-.lorenFormulario{
-    margin: 25px;
-    padding: 25px;
-    grid-area: LorFormulario;
+.contenedorFormulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/*medias*/
-@media (max-width:500px){
-
-    .gridPadre{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "segundo"
-        "ultimo"
-        "footer"
-        ;
-    }
-
-    .piePadre{
-        display: grid;
-        grid-template-areas: 
-        "hijoUno"
-        "hijoDos"
-        "fin"
-        ;
-    }
-
-    .contUno{
-        display: none;
-    }
-
-    .contTres{
-        display: none;
-    }
-
-    .contenedorFormulario{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "formulario"
-        "footer"
-        ;
-        
-    }
-
-    .lorenFormulario{
-        display: none;
-    }
-
+.formulario {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 400px;
+  grid-area: formulario;
 }
 
-@media (min-Width:501px) and (max-width:900px) {
-    .gridPadre{
-        display: grid;
-        grid-template-areas: 
-        "header header"
-        "titulo titulo"
-        "primero segundo"
-        "primero segundo"
-        "primero segundo"
-        "ultimo ultimo"
-        "footer footer"
-        ;
-        
-    }
-    .contTres{
-        display: none;
-    }
-
-    .contenedorFormulario{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "formulario"
-        "footer"
-        ;
-        
-    }
-
-    .lorenFormulario{
-        display: none;
-    }
+#mensaje {
+  overflow: scroll;
+  resize: none;
 }
 
+.lorenFormulario {
+  margin: 25px;
+  padding: 25px;
+  grid-area: LorFormulario;
+}
+
+@media (max-width: 500px) {
+  .gridPadre {
+    display: grid;
+    grid-template-areas: "header" "segundo" "ultimo" "footer";
+  }
+  .piePadre {
+    display: grid;
+    grid-template-areas: "hijoUno" "hijoDos" "fin";
+  }
+  .contUno {
+    display: none;
+  }
+  .contTres {
+    display: none;
+  }
+  .contenedorFormulario {
+    display: grid;
+    grid-template-areas: "header" "formulario" "footer";
+  }
+  .lorenFormulario {
+    display: none;
+  }
+  .titulo {
+    display: none;
+  }
+  #search {
+    display: none;
+  }
+}
+@media (min-Width: 501px) and (max-width: 900px) {
+  .gridPadre {
+    display: grid;
+    grid-template-areas: "header header" "titulo titulo" "primero segundo" "primero segundo" "primero segundo" "ultimo ultimo" "footer footer";
+  }
+  .contTres {
+    display: none;
+  }
+  .contenedorFormulario {
+    display: grid;
+    grid-template-areas: "header" "formulario" "footer";
+  }
+  .lorenFormulario {
+    display: none;
+  }
+}
 @media (min-width: 901px) {
-    .gridPadre {
-        display: grid;
-        grid-template-areas: 
-        "header header header"
-        "titulo titulo titulo"
-        "primero segundo grafico"
-        "primero segundo grafico"
-        "primero segundo grafico"
-        "ultimo ultimo ultimo"
-        "footer footer footer"
-    }
-
- 
+  .gridPadre {
+    display: grid;
+    grid-template-areas: "header header header" "titulo titulo titulo" "primero segundo grafico" "primero segundo grafico" "primero segundo grafico" "ultimo ultimo ultimo" "footer footer footer";
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */

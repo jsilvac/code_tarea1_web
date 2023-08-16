@@ -9,12 +9,11 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-       
-        <h1 class="titulo">Holding Mi Empresa</h1>
-        <a href="../index.html" >
-            <img class="logo" src="../images/logo2.png" alt="Logo">
-        </a>
+  <header class="d-flex align-items-center">
+    <h1 class="titulo me-3">Empresas Eltit Ltda.</h1>
+    <a href="index.html">
+        <img class="logo" src="../images/logo_eltit_sin-fondo.png" alt="Logo">
+    </a>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#">Menú</a>
@@ -39,7 +38,7 @@
                         <a class="nav-link active" aria-current="page"  href="contacto.html">Contacto</a>
                       </li>
                     </ul>
-                    <form class="d-flex">
+                    <form class="d-flex" id="search">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                       <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
@@ -48,23 +47,31 @@
             </nav>
 
     </header>
+    
     <main>
-        <h2>Encuentra nuestras sucursales</h2>
-        <div class="contenedorSucursales">
+      <div class="container ">
+        <h2 class="text-center">Encuentra nuestras sucursales</h2>
+        <div class="row">
+          <div class="col-lg-6">
             <div class="comboLocales">
-                <select name="locales" id="">
-                    <option value="seleciona">Locales..</option>
-                    <option value="Pucon">Pucón</option>
-                    <option value="villarrica">Villarrica</option>
-                    <option value="valdivia">Valdivia</option>
-                </select>
-                <p class="lorenSucursales">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae accusantium quos illum odio corrupti labore, vel omnis repellat fuga neque magni repudiandae, itaque facilis dicta nisi ipsa, quod voluptate! Ex?</p>
+              <select class="form-select mb-3" name="locales" id="locales">
+                <option value="selecciona">Locales..</option>
+                <option value="Pucon">Pucón</option>
+                <option value="villarrica">Villarrica</option>
+                <option value="valdivia">Valdivia</option>
+              </select>
+              <p class="lorenSucursales">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae accusantium quos illum odio corrupti labore, vel omnis repellat fuga neque magni repudiandae, itaque facilis dicta nisi ipsa, quod voluptate! Ex?</p>
             </div>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24706.771728028678!2d-71.97977990106527!3d-39.28039256593171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96147f42351988d1%3A0x3c5c238b02dc5935!2zUHVjb24sIFB1Y8OzbiwgQXJhdWNhbsOtYQ!5e0!3m2!1ses!2scl!4v1688699528220!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-lg-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24706.771728028678!2d-71.97977990106527!3d-39.28039256593171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96147f42351988d1%3A0x3c5c238b02dc5935!2zUHVjb24sIFB1Y8OzbiwgQXJhdWNhbsOtYQ!5e0!3m2!1ses!2scl!4v1688699528220!5m2!1ses!2scl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+          </div>
         </div>
+      </div>
     </main>
+
     <footer class="piePadre">
         <div class="contenedorFlex">
             <div class="pieHijo hijoUno">
