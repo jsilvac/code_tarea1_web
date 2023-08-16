@@ -148,7 +148,7 @@ footer {
   padding: 20px;
   grid-area: footer;
 }
-footer h3 {
+footer p {
   text-align: center;
   grid-area: fin;
 }
