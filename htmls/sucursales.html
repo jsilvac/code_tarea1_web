@@ -1,98 +1,98 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Empresas eltit, mucho mas que precios bajos">
-    <title>Sucursales - Eltit</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
-  <header class="d-flex align-items-center">
-    <h1 class="titulo me-3">Empresas Eltit Ltda.</h1>
-    <a href="index.html">
-        <img class="logo" src="../images/logo_eltit_sin-fondo.png" alt="Logo">
-    </a>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Menú</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"  href="nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"  href="galeria.html">Galeria</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"  href="sucursales.html">Sucursales</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"  href="contacto.html">Contacto</a>
-                  </li>
-                </ul>
-                <form class="d-flex" id="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-        </nav>
+<html lang="es_LA">
 
-    </header>
-    
-    <main>
-      <div class="containerSucursales ">
-        <h2 class="text-center">Encuentra nuestras sucursales</h2>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="comboLocales">
-              <select class="form-select mb-3" name="locales" id="locales">
-                <option value="selecciona">Locales..</option>
-                <option value="Pucon">Pucón</option>
-                <option value="villarrica">Villarrica</option>
-                <option value="valdivia">Valdivia</option>
-              </select>
-              <p class="lorenSucursales">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae accusantium quos illum odio corrupti labore, vel omnis repellat fuga neque magni repudiandae, itaque facilis dicta nisi ipsa, quod voluptate! Ex?</p>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="Explora nuestras sucursales de Eltit y descubre la calidad y variedad que ofrecemos. Encuentra productos y servicios excepcionales en cada ubicación. ¡Conócenos hoy!">
+  <title>Sucursales - Eltit</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/fd33e7d02a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <a href="../index.html">
+          <h1>Eltit</h1>
+        </a>
+      </div>
+      <div class="menu" id="show-menu">
+        <nav>
+          <ul>
+            <li class="menu-selected"><a href="../index.html" class="text_menu_selected"><i class="fa-solid fa-house-chimney"></i>Inicio</a></li>
+            <li ><a href="nosotros.html"><i class="fa-regular fa-hand-pointer"></i>Nosotros</a></li>
+            <li ><a href="galeria.html"><i class="fa-regular fa-image"></i>Galeria</a></li>
+            <li ><a href="sucursales.html"><i class="fa-solid fa-shop"></i>Sucursales</a></li>
+            <li ><a href="contacto.html"><i class="fa-solid fa-comments"></i>Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div id="icon-menu">
+      <i class="fa-sharp fa-solid fa-bars"></i>
+    </div>
+  </header>
+  <div class="container-all" id="move-content">
+  <main class="sucursalmain">
+    <div class="containerSucursales ">
+      <h2 class="text-center">Encuentra nuestras sucursales</h2>
+      <div class="row tarjeraMain">
+        <div class="col-lg-6 tarjetacombo" >
+          <div class="comboLocales">
+            <select class="form-select mb-3" name="locales" id="locales">
+              <option value="selecciona">Locales..</option>
+              <option value="Pucon">Pucón</option>
+              <option value="villarrica">Villarrica</option>
+              <option value="valdivia">Valdivia</option>
+            </select>
+            <p class="lorenSucursales">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae accusantium quos
+              illum odio corrupti labore, vel omnis repellat fuga neque magni repudiandae, itaque facilis dicta nisi
+              ipsa, quod voluptate! Ex?</p>
           </div>
-          <div class="col-lg-6">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24706.771728028678!2d-71.97977990106527!3d-39.28039256593171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96147f42351988d1%3A0x3c5c238b02dc5935!2zUHVjb24sIFB1Y8OzbiwgQXJhdWNhbsOtYQ!5e0!3m2!1ses!2scl!4v1688699528220!5m2!1ses!2scl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        </div>
+        <div class="col-lg-6 tarjetaMapa">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item mapa"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24706.771728028678!2d-71.97977990106527!3d-39.28039256593171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96147f42351988d1%3A0x3c5c238b02dc5935!2zUHVjb24sIFB1Y8OzbiwgQXJhdWNhbsOtYQ!5e0!3m2!1ses!2scl!4v1688699528220!5m2!1ses!2scl"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
+  </div>
+  <section class="container-footer">
+    <footer>
 
-    <footer class="piePadre">
-        <div class="contenedorFlex">
-            <div class="pieHijo hijoUno">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="sucursales.html">Sucursales</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="pieHijo hijoDos">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ratione sed commodi deleniti officiis? Laborum earum repudiandae quas iure, corrupti magnam tenetur quae aperiam possimus reiciendis accusamus qui sunt ea! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos beatae inventore quia, ea exercitationem cupiditate laboriosam consequuntur soluta corporis natus, voluptate in illo qui laudantium obcaecati distinctio ducimus, delectus amet.</p>
-            </div>
-        </div>
+      <div class="logo-footer">
+        <a href="../index.html">
+          <img src="../images/logoEltit.png" alt="Empresa Eltit - logo">
+        </a>
+      </div>
 
-        
-        <p>Tarea 1 web - CoderHouse</p>
-       
+      <div class="redes-footer">
+        <a href="https://web.facebook.com/eltit/?locale=es_LA&_rdc=1&_rdr"><i
+            class="fa-brands fa-facebook fa-xl icon-redes-footer"></i></a>
+        <a href="https://www.instagram.com/eltit.cl/"><i
+            class="fa-brands fa-instagram fa-xl icon-redes-footer"></i></a>
+        <a href="https://youtube.com/@eltit"><i class="fa-brands fa-youtube icon-redes-footer"></i></a>
+      </div>
+
+      <hr>
+
+      <h4>© 2023 Eltit - todos los derechos reservados </h4>
+
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
 </body>
+
 </html>

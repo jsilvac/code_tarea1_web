@@ -1,104 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es_LA">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Empresas eltit, mucho mas que precios bajos">
-    <title>Home - Eltit</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="Empresas eltit, mucho mas que precios bajos">
+  <title>Home - Eltit</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <script src="https://kit.fontawesome.com/fd33e7d02a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="gridPadre">
 
-    <header class="d-flex align-items-center">
-        <h1 class="titulo me-3">Empresas Eltit Ltda.</h1>
+<body >
+
+  <!-- <header class="d-flex align-items-center"> -->
+  <header>
+    <div class="header-content">
+      <div class="logo">
         <a href="index.html">
-            <img class="logo" src="images/logo_eltit_sin-fondo.png" alt="Logo">
+          <h1>Eltit</h1>
         </a>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Menú</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"  href="htmls/nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"  href="htmls/galeria.html">Galeria</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"  href="htmls/sucursales.html">Sucursales</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"  href="htmls/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-                <form class="d-flex" id="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit" ">Search</button>
-                </form>
-              </div>
-            </div>
+      </div>
+      <div class="menu" id="show-menu">
+        <nav>
+          <ul>
+            <li class="menu-selected"><a href="index.html" class="text_menu_selected"><i class="fa-solid fa-house-chimney"></i>Inicio</a></li>
+            <li ><a href="htmls/nosotros.html"><i class="fa-regular fa-hand-pointer"></i>Nosotros</a></li>
+            <li ><a href="htmls/galeria.html"><i class="fa-regular fa-image"></i>Galeria</a></li>
+            <li ><a href="htmls/sucursales.html"><i class="fa-solid fa-shop"></i>Sucursales</a></li>
+            <li ><a href="htmls/contacto.html"><i class="fa-solid fa-comments"></i>Contacto</a></li>
+          </ul>
         </nav>
+      </div>
+    </div>
+    <div id="icon-menu">
+      <i class="fa-sharp fa-solid fa-bars"></i>
+    </div>
+  </header> 
 
-    </header>
+  <div class="container-all" id="move-content">
 
-    <main>
-        <h2 class="subtitulo">Mi Empresa</h2>
-        <div class="contenedorPadre">          
-            <div class="contenedores contUno">
-                <p class="pPrimero">este es el primeroLorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum velit qui adipisci ipsam. Maxime molestias fugiat enim autem, dolorum quisquam maiores cupiditate dolores tempora earum amet a quos nostrum vel.
-                </p>
-                <img class="imagenHome" src="images/image1.jpeg" alt="Imagen Home">
+    
+    <section class="contenedor-uno">
+      
+      <div class="contenedores contUno">
+        <h2 class=" subtitulo">HOLDING ELTIT</h2>
+        <p class="pPrimero">este es el primeroLorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          velit qui adipisci ipsam. Maxime molestias fugiat enim autem, dolorum quisquam maiores cupiditate
+          dolores tempora earum amet a quos nostrum vel.
+        </p>
+      </div>
+    </section>
 
-                <p class="parraCorto"> corto Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam asperiores impedit numquam magnam, necessitatibus esse tenetur eius, eveniet pariatur commodi totam eligendi provident excepturi quam. Id debitis fugit est. Minima.</p>
+    <section class="contenedor-2">
 
-            </div>
-            <div class="contenedores contDos">
-                <p> este es el segundo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus enim dignissimos debitis fuga voluptas, atque ullam maiores vitae culpa excepturi deleniti sapiente eaque ad repudiandae. Dolore totam ipsa iste fugiat.
-                Enim eius labore dolore! Cum unde repellat dolorum ipsa enim dignissimos ut veritatis, autem voluptatibus animi non assumenda. Ipsam doloribus eos error consequuntur eum expedita atque labore qui veniam molestiae.
-                Fugiat, libero dicta omnis molestias laudantium asperiores! Nisi, deleniti possimus dolorem cum omnis ipsam totam beatae ratione esse sint quibusdam placeat reprehenderit, sit, sed natus assumenda magnam ab necessitatibus! Placeat.
-                Quod et nam quibusdam quo fuga voluptatum soluta rerum animi beatae possimus ullam itaque hic, molestias blanditiis esse aut maiores, corrupti nemo in perferendis optio exercitationem? Iusto adipisci dolore eos!
-                Ex maxime voluptate vero. Impedit similique officiis, assumenda veniam iste placeat facilis earum eius quia asperiores aut culpa porro ad et omnis eum nemo fuga dicta sit? Labore, totam vero?
-                Voluptate aliquid nesciunt necessitatibus laboriosam nisi in temporibus ab doloremque eius. Cumque vitae voluptate atque facere perspiciatis voluptatum mollitia maiores, et quos fugit dolores quisquam saepe. Et est nostrum architecto.
-                Non, expedita accusamus saepe sapiente quia quod quae deserunt totam minima culpa impedit, blanditiis natus modi facere mollitia iste vitae. Commodi, explicabo laboriosam numquam tempore delectus dolor accusantium neque natus?
-                Expedita eligendi ipsam hic aspernatur consequatur eius, rem modi et sit, omnis voluptates, quae placeat harum mollitia ex vitae tenetur dolor dolorum perferendis neque in. Recusandae illo unde quos nisi.</p>
-                <p class="ultimoP"> ultimo Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cumque, porro fugit molestiae ducimus voluptatum illo quo, quae sapiente mollitia vitae officiis beatae ipsum obcaecati! Eos enim recusandae similique ipsum?</p>
-            </div>
-            <div class="contenedores contTres">
-                <div class="grafico"></div>
-                <div class="grafico"></div>
-            </div>
-        </div>
-    </main>
 
-    <footer class="piePadre">
-        <div class="contenedorFlex">
-            <div class="pieHijo hijoUno">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="sucursales.html">Sucursales</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="pieHijo hijoDos">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ratione sed commodi deleniti officiis? Laborum earum repudiandae quas iure, corrupti magnam tenetur quae aperiam possimus reiciendis accusamus qui sunt ea! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos beatae inventore quia, ea exercitationem cupiditate laboriosam consequuntur soluta corporis natus, voluptate in illo qui laudantium obcaecati distinctio ducimus, delectus amet.</p>
-            </div>
-        </div>
+      <article class="contenedor-info">
+        <h1>Holding</h1>
+        <p> este es el segundo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus enim
+            dignissimos debitis fuga voluptas, atque ullam maiores vitae culpa excepturi deleniti sapiente eaque
+            ad repudiandae. Dolore totam ipsa iste fugiat.
+            Enim eius labore dolore! Cum unde repellat dolorum ipsa enim dignissimos ut veritatis, autem
+            voluptatibus animi non assumenda. Ipsam doloribus eos error consequuntur eum expedita atque labore
+            qui veniam molestiae.
+            Fugiat, libero dicta omnis molestias laudantium asperiores! Nisi, deleniti possimus dolorem cum
+            omnis ipsam totam beatae ratione esse sint quibusdam placeat reprehenderit, sit, sed natus assumenda
+            magnam ab necessitatibus! Placeat.
+            Quod et nam quibusdam quo fuga voluptatum soluta rerum animi beatae possimus ullam itaque hic,
+            molestias blanditiis esse aut maiores, corrupti nemo in perferendis optio exercitationem? Iusto
+            adipisci dolore eos!
+            Ex maxime voluptate vero. Impedit similique officiis, assumenda veniam iste placeat facilis earum
+            eius quia asperiores aut culpa porro ad et omnis eum nemo fuga dicta sit? Labore, totam vero?
+            Voluptate aliquid nesciunt necessitatibus laboriosam nisi in temporibus ab doloremque eius. Cumque
+            vitae voluptate atque facere perspiciatis voluptatum mollitia maiores, et quos fugit dolores
+            quisquam saepe. Et est nostrum architecto.
+            Non, expedita accusamus saepe sapiente quia quod quae deserunt totam minima culpa impedit,
+            blanditiis natus modi facere mollitia iste vitae. Commodi, explicabo laboriosam numquam tempore
+            delectus dolor accusantium neque natus?
+            Expedita eligendi ipsam hic aspernatur consequatur eius, rem modi et sit, omnis voluptates, quae
+            placeat harum mollitia ex vitae tenetur dolor dolorum perferendis neque in. Recusandae illo unde
+            quos nisi.</p>
 
+        <img src="images/Pucon.jpeg" alt="Empresas Eltit - imagen de Pucón por la noche">
         
-        <p>Tarea 1 web - CoderHouse</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur atque cumque aliquid vel, expedita perspiciatis recusandae, ullam error deleniti repellat libero tempora placeat molestiae iusto accusamus maxime eligendi optio aut!</p>  
+
+        <h2>¿Por que?</h2>
        
+        <p class="ultimoP"> ultimo Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde cumque, porro
+            fugit molestiae ducimus voluptatum illo quo, quae sapiente mollitia vitae officiis beatae ipsum
+            obcaecati! Eos enim recusandae similique ipsum?</p>
+      </article>
+    
+
+      <section class="contenedor-aside">
+
+        <aside class="aside">
+          <img src="images/grafico_empresa.png" alt="Empresas Eltit - El crecimiento de nuestra empresa ">
+          <p>Lorem ipsum dpisicing elit. Error nesciunt, rem veniam adipisci fugit ab doloribus voluptas eveniet tempore ducimus blanditiis modi quis? Est ea amet eaque maiores, distinctio beatae!</p>
+          <a href="""><button>Leer mas</button></a>
+        </aside>
+        <aside class="aside">
+          <img src="images/Grafico_proyeccion.jpeg" alt="Empresas Eltit - Nuestra proyeccion a futuro de nuestra organización">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius dolores sed pariatur perferendis sint, voluptates neque amet liberes similique nostrum animi!</p>
+        </aside>
+        <aside class="aside">
+          <img src="images/grafico_productos.jpeg" alt="Empresas Eltit - Las ventas mas destacadas de nuestras salas">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sunt dolorum magni ullam? Harum animi accusantium quis quaerat, distinctio, architecto nostrum ipsam soluta delectus provident incidunt eveniet molestiae exer</p>
+          <a href=""><button>Leer mas</button></a>
+        </aside>
+
+      </section>
+    </section> 
+
+      <!-- footer -->
+    <section class="container-footer">
+    <footer>
+
+      <div class="logo-footer">
+        <a href="index.html">
+          <img src="images/logoEltit.png" alt="Empresa Eltit - logo">
+        </a>
+      </div>
+
+      <div class="redes-footer">
+        <a href="https://web.facebook.com/eltit/?locale=es_LA&_rdc=1&_rdr"><i
+            class="fa-brands fa-facebook fa-xl icon-redes-footer"></i></a>
+        <a href="https://www.instagram.com/eltit.cl/"><i
+            class="fa-brands fa-instagram fa-xl icon-redes-footer"></i></a>
+        <a href="https://youtube.com/@eltit"><i class="fa-brands fa-youtube icon-redes-footer"></i></a>
+      </div>
+
+      <hr>
+
+      <h4>© 2023 Eltit - todos los derechos reservados </h4>
+
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </section>
+  </div>
+  <!-- fin footer -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
