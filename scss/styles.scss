@@ -464,11 +464,13 @@ header {
 				
 				width: 800px;
 				height: 250px;
-				
-		
+
 			}  
 			
-				  
+			.contenedor1{
+				max-width: 100%;
+				margin: 20px;
+			}	  
 			  
 		}
 	
@@ -559,7 +561,7 @@ header {
 /* medias querys*/
 
 @media screen and (max-width: 1220px){
-	.contenedor-2, .containerSucursales, .nosotrosmain,
+	.contenedor-2, .containerSucursales, .contenedornosotros,
 	.header-content, .container-footer footer{
 		max-width: 100%;
 		padding: 0 20px;
@@ -581,7 +583,7 @@ header {
 
 		main{
 
-			max-width: 1200px;
+			max-width: 1220px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -601,24 +603,70 @@ header {
 				}
 			}
 			
+
 			
 		}
 		.clasemaingaleria{
 			padding-top: 90px;
 			display: block;
 			max-width: 100%;
+			margin: 0px;
+	
 		}
+
+		.sucursalmain{
+
+			margin: 0px;
+			margin-top: 90px;
+
+			.containerSucursales{
+				width: 100%;
+				padding:  0px;
+			}
+
+		}
+
+		.contactomain{
+			margin: 0px;
+			margin-top: 90px;
+		}
+			
 		.nosotrosmain{
 
 			width: 100%;
-			
-			
+			display: flex;
+			justify-content: center;
+			margin: 0px;
+
 			.contenedorNosotros{
-				max-width: 1020px;
+				
 				width: 100%;
+				height: 100%;
 				
-				
+				margin-bottom: 250px;
+
+
+				.contenedornoctrosMV{
+					width: 100%;
+					height: 100%;
+					display: block;
+					margin: auto;
+				}
+
+				.contenedorNosotrosFV{
+					width: 100%;
+					height: 100%;
+					display: block;
+
+					img{
+						width: 100%;
+						display: block;
+						padding-bottom: 10px;
+						margin: auto
+					}
+				}
 			}
+
 		}
 		
 	}
@@ -655,7 +703,7 @@ header {
 				width: 100%;
 				height: 100%;
 				// padding-right: 10px;
-				margin: auto;
+				
 				display: flex;
 				justify-content: center;
 				margin-bottom: 250px;
@@ -673,15 +721,59 @@ header {
 				
 				
 
-				img{
+					img{
 					width: 100%;
 					
 					padding-bottom: 10px;
 					margin: auto
-				}
+					}
 				}
 			}
 
+			.contenedorgaleria{
+				p,h2{
+					
+					justify-content: center;
+					text-align: center;
+					margin: 10px;
+					margin-bottom: 20px;
+				}
+	
+		
+			}
+
+		}
+		.clasemaingaleria, .contactomain, .sucursalmain, .nosotrosmain{
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+			margin-bottom: 250px;
+			margin: 0px;
+			padding: 0px;
+			margin-top: 90px;
+
+		}
+		.sucursalmain{
+
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			
+			.containerSucursales{
+				width: 100%;
+				
+				
+
+				.tarjeraMain{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin: 0px;
+				}
+
+				
+			}
 		}
 	}
 
@@ -736,10 +828,33 @@ header {
 				}
 			}
 
-			
+
 			
 			
 		}
+		.sucursalmain{
+
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			
+			.containerSucursales{
+				width: 100%;
+				
+				
+
+				.tarjeraMain{
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin: 0px;
+				}
+
+				
+			}
+		}
+
 		.nosotrosmain{
 
 			width: 100%;
@@ -777,12 +892,15 @@ header {
 			}
 
 		}
+
+
 		.clasemaingaleria, .contactomain, .sucursalmain{
 			width: 100%;
 			height: 100%;
 			display: inline-block;
 			margin-bottom: 250px;
 			margin: 0px;
+			margin-top: 90px;
 		}
 		
 	}

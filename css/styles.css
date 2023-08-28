@@ -375,6 +375,10 @@ header #icon-menu:hover {
   width: 800px;
   height: 250px;
 }
+.container-all main .contenedorNosotros .contenedor1 {
+  max-width: 100%;
+  margin: 20px;
+}
 .container-all .tituloNosotros {
   text-align: center;
   padding-top: 90px;
@@ -442,7 +446,7 @@ header #icon-menu:hover {
 /* fin pie de pagina*/
 /* medias querys*/
 @media screen and (max-width: 1220px) {
-  .contenedor-2, .containerSucursales, .nosotrosmain,
+  .contenedor-2, .containerSucursales, .contenedornosotros,
   .header-content, .container-footer footer {
     max-width: 100%;
     padding: 0 20px;
@@ -455,7 +459,7 @@ header #icon-menu:hover {
     margin: 10px;
   }
   .container-all main {
-    max-width: 1200px;
+    max-width: 1220px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -476,13 +480,47 @@ header #icon-menu:hover {
     padding-top: 90px;
     display: block;
     max-width: 100%;
+    margin: 0px;
+  }
+  .container-all .sucursalmain {
+    margin: 0px;
+    margin-top: 90px;
+  }
+  .container-all .sucursalmain .containerSucursales {
+    width: 100%;
+    padding: 0px;
+  }
+  .container-all .contactomain {
+    margin: 0px;
+    margin-top: 90px;
   }
   .container-all .nosotrosmain {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
   }
   .container-all .nosotrosmain .contenedorNosotros {
-    max-width: 1020px;
     width: 100%;
+    height: 100%;
+    margin-bottom: 250px;
+  }
+  .container-all .nosotrosmain .contenedorNosotros .contenedornoctrosMV {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+  }
+  .container-all .nosotrosmain .contenedorNosotros .contenedorNosotrosFV {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .container-all .nosotrosmain .contenedorNosotros .contenedorNosotrosFV img {
+    width: 100%;
+    display: block;
+    padding-bottom: 10px;
+    margin: auto;
   }
 }
 @media screen and (max-width: 1020px) {
@@ -507,7 +545,6 @@ header #icon-menu:hover {
     max-width: 1020px;
     width: 100%;
     height: 100%;
-    margin: auto;
     display: flex;
     justify-content: center;
     margin-bottom: 250px;
@@ -524,6 +561,36 @@ header #icon-menu:hover {
     width: 100%;
     padding-bottom: 10px;
     margin: auto;
+  }
+  .container-all main .contenedorgaleria p, .container-all main .contenedorgaleria h2 {
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .container-all .clasemaingaleria, .container-all .contactomain, .container-all .sucursalmain, .container-all .nosotrosmain {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-bottom: 250px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 90px;
+  }
+  .container-all .sucursalmain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container-all .sucursalmain .containerSucursales {
+    width: 100%;
+  }
+  .container-all .sucursalmain .containerSucursales .tarjeraMain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
   }
   .contenedor-2 {
     width: 100%;
@@ -563,6 +630,21 @@ header #icon-menu:hover {
     width: 100%;
     height: 100vh;
   }
+  .container-all .sucursalmain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .container-all .sucursalmain .containerSucursales {
+    width: 100%;
+  }
+  .container-all .sucursalmain .containerSucursales .tarjeraMain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
   .container-all .nosotrosmain {
     width: 100%;
     display: flex;
@@ -598,6 +680,7 @@ header #icon-menu:hover {
     display: inline-block;
     margin-bottom: 250px;
     margin: 0px;
+    margin-top: 90px;
   }
   .move-container-all {
     transform: translateX(300px);
