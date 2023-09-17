@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
-/*medias*/
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Libre Baskerville";
-}
-
-body {
-  background-color: whitesmoke;
-}
-
-/* cabecera o header*/
 header {
   position: fixed;
   top: 0;
@@ -105,6 +93,65 @@ header #icon-menu:hover {
 }
 
 /* fin a header o cabecera*/
+/*pie de pagina*/
+.container-footer {
+  width: 100%;
+  padding: 30px 0;
+  margin-top: 20px;
+  text-decoration: red;
+}
+.container-footer footer {
+  max-width: 1200px;
+  margin: auto;
+}
+.container-footer footer .logo-footer {
+  text-align: center;
+}
+.container-footer footer .logo-footer img {
+  width: 150px;
+}
+.container-footer footer .redes-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.container-footer footer .redes-footer .icon-redes-footer {
+  font-size: 30px;
+  margin: 18px;
+  background: #efefef;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #a2a2a2;
+}
+.container-footer footer .redes-footer .fa-facebook:hover {
+  background: #41579a;
+  color: white;
+}
+.container-footer footer .redes-footer .fa-youtube:hover {
+  background: #c4302b;
+  color: white;
+}
+.container-footer footer .redes-footer .fa-instagram:hover {
+  background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+  color: white;
+}
+.container-footer footer hr {
+  margin-top: 20px;
+  border: none;
+  height: 2px;
+  background: rgba(170, 136, 170, 0.5333333333);
+}
+.container-footer h4 {
+  text-align: center;
+  margin-top: 20px;
+  color: #a2a2a2;
+}
+
+/* fin pie de pagina*/
 /* secciones del main y principal*/
 .container-all {
   margin-top: 15px;
@@ -385,65 +432,6 @@ header #icon-menu:hover {
 }
 
 /* fin secciones del main y principal*/
-/*pie de pagina*/
-.container-footer {
-  width: 100%;
-  padding: 30px 0;
-  margin-top: 20px;
-  text-decoration: red;
-}
-.container-footer footer {
-  max-width: 1200px;
-  margin: auto;
-}
-.container-footer footer .logo-footer {
-  text-align: center;
-}
-.container-footer footer .logo-footer img {
-  width: 150px;
-}
-.container-footer footer .redes-footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-}
-.container-footer footer .redes-footer .icon-redes-footer {
-  font-size: 30px;
-  margin: 18px;
-  background: #efefef;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  color: #a2a2a2;
-}
-.container-footer footer .redes-footer .fa-facebook:hover {
-  background: #41579a;
-  color: white;
-}
-.container-footer footer .redes-footer .fa-youtube:hover {
-  background: #c4302b;
-  color: white;
-}
-.container-footer footer .redes-footer .fa-instagram:hover {
-  background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
-  color: white;
-}
-.container-footer footer hr {
-  margin-top: 20px;
-  border: none;
-  height: 2px;
-  background: rgba(170, 136, 170, 0.5333333333);
-}
-.container-footer h4 {
-  text-align: center;
-  margin-top: 20px;
-  color: #a2a2a2;
-}
-
-/* fin pie de pagina*/
 /* medias querys*/
 @media screen and (max-width: 1220px) {
   .contenedor-2, .containerSucursales, .contenedornosotros,
@@ -734,5 +722,14 @@ header #icon-menu:hover {
   }
 }
 /* fin medias querys*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Baskerville";
+}
+
+body {
+  background-color: whitesmoke;
+}
 
 /*# sourceMappingURL=styles.css.map */
